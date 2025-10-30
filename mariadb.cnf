@@ -1,0 +1,7 @@
+[mysqld]
+innodb_log_file_size = 64M
+bind-address = 0.0.0.0
+skip-networking=0
+skip-bind-address               
+skip-name-resolve
+innodb_buffer_pool_size = 2G
