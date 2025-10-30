@@ -14,8 +14,7 @@ Docker Compose
 
 สำหรับ Laravel Framework
 - แก้ไข /nginx/conf.d/default.conf เปลี่ยน root /var/www; เป็น root /var/www/public;
-- stop docker ด้วยคำสั่ง docker compose down
-- start docker ด้วยคำสั่ง docker compose up -d --build
+- จากนั้นทำการ Build Docker
 - chmod -R 755 storage/
 - chmod -R 755 bootstrap/cache/
 - chown -R www-data:www-data storage/
@@ -23,11 +22,10 @@ Docker Compose
 
 การเปลี่ยน PHP Version
 - แก้ไข Dockerfile บรรทัดบนสุด เปลี่ยน FROM php:8.4-fpm เป็นเวอร์ชันที่ต้องการ
-- stop docker ด้วยคำสั่ง docker compose down
-- start docker ด้วยคำสั่ง docker compose up -d --build
+* จากนั้นทำการ Build Docker
 
 การเปลี่ยน Username และ Password ของ SFTP (SSH)
-- แก้ไข Dockerfile
+- แก้ไข Dockerfile ค้นหาบรรทัดนี้
 
 # สร้าง user เป็น root สำหรับ SFTP/SSH
 RUN useradd -m -u 0 -o -s /bin/bash john \       <----- เปลี่ยนจาก john เป็น User ที่ต้องการ
