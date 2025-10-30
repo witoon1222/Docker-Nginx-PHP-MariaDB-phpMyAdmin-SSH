@@ -5,6 +5,11 @@ Docker Compose
 - phpMyAdmin
 - Open SSH Server
 
+โปรแกรมที่ต้องใช้
+- ดาวน์โหลด VS Code https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user
+- ดาวน์โหลด Putty https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe
+- ดาวน์โหลด Win SCP https://winscp.net/download/WinSCP-6.5.4-Setup.exe/download
+
 การ Build Docker และสั่งรัน docker
 - docker compose down
 - docker compose up -d --build
