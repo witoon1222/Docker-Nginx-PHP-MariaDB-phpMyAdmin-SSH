@@ -5,8 +5,8 @@ Docker Compose
 - phpMyAdmin
 - Open SSH Server
 
-สำหรับ PHP 
-ใช้คำสั่ง docker compose up -d --build
+สำหรับ PHP ใช้คำสั่ง 
+- docker compose up -d --build
 
 สำหรับ Laravel Framework
 
